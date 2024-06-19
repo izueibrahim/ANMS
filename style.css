@@ -1897,9 +1897,10 @@
   }
   
   /* (1281x800) Widescreen, (1600x900) HD+ Display */
-  @media (min-width : 1281.1px) and (max-width: 1610px) {
+  @media (min-width : 1280px) and (max-width: 1610px) {
 
     .hero-desktop {
+        /* display: block; */
         background-image: url("./src/hero-background-1.jpeg");
         height: 100vh;
         width: 100vw;
@@ -2008,11 +2009,20 @@
     /**** End of Typography ************/
   
   
-  @media (min-width : 1024px) and (max-width: 1281px) {
+  @media (min-width : 1024px) and (max-width: 1279px) {
   
     /*****************************************************************/
     /* LAYOUT */
     /*****************************************************************/
+
+    .hero-desktop {
+      background-image: url("./src/hero-background-tablet.png");
+      height: 100vh;
+      width: 100vw;
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+      padding: 3rem 5rem;
+    }
   
     .page-header-top {
       padding: 1rem 3rem;
@@ -2185,6 +2195,15 @@
     /* LAYOUT */
     /*****************************************************************/
   
+    .hero-desktop {
+      background-image: url("./src/hero-background-tablet.png");
+      height: 100vh;
+      width: 100vw;
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+      padding: 3rem 5rem;
+    }
+
     .hero-tablet {
       height: 755px;
       width: 100%;
@@ -2620,7 +2639,16 @@
     /*****************************************************************/
     /* LAYOUT */
     /*****************************************************************/
-  
+
+    .hero-desktop {
+      background-image: url("./src/hero-background-mobile.jpeg");
+      height: 100vh;
+      width: 100vw;
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+      padding: 3rem 1rem;
+    }
+
     .hero-mobile {
       height: 655px;
       display: flex;
@@ -2664,6 +2692,11 @@
       padding: 50px 0;
       z-index: 1;
     }
+
+    .logo-anms {
+      width: 40%;
+      height: auto;
+    }
   
     .cover-img {
       position: absolute;
@@ -2687,6 +2720,7 @@
     } */
   
     .page-header-top {
+      /* flex-direction: row-reverse; */
       padding: 20px;
       gap: 20px;
     }
