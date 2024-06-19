@@ -5,7 +5,7 @@ $(document).ready(function(){
     //edit ".25" below to change time in terms of day
     // var deadline = new Date(Date.now() + 59 *24*3600*1000);
 
-    var deadline = new Date("June 18, 2024  00:00:00").getTime();
+    var deadline = new Date("June 28, 2024  00:00:00").getTime();
     
     var x = setInterval(function() {
     
