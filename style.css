@@ -50,6 +50,7 @@
     --secondary-01: #F0F7F8;
     --secondary-02: #FFEFC2;
     --secondary-03: #FFDE85;
+    --secondary-04: #0C478E;
   
     --accent-01: #EF4830;
     --accent-02: #FD7722;
@@ -153,10 +154,13 @@
     color: var(--white);
   }
 
+  .font-color-blue {
+    color: var(--secondary-04);
+  }
+
   .underline {
     text-decoration: underline;
   }
-
   
   /*****************************************************************/
   /* LAYOUT */
@@ -178,11 +182,13 @@
   }
   
   .hero-desktop {
-    background-image: url("./src/hero-background-1.jpeg");
+    background-image: url("./src/hero-background-v2.jpeg");
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    /* background-size: 100vw 100vh; */
+    background-position: center;
     padding: 3rem 5rem;
   }
   
@@ -201,18 +207,18 @@
   }
 
   #kenali-anms {
-    height: 100%;
+    height: 100vh;
   }
 
   #aktiviti {
     background-color: var(--dark-primary-01);
-    height: 100%;
+    height: 100vh;
     z-index: 2;
   }
 
   #pempengaruh {
     background-color: var(--light-primary-01);
-    height: 100%;
+    height: 100vh;
     z-index: 2;
   }
 
@@ -221,7 +227,7 @@
     height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     padding: 3rem 5rem;
   }
 
@@ -243,6 +249,11 @@
   
   .cover-img-teradun {
     position: absolute;
+  }
+
+  .aktiviti-image img {
+    max-width: 100%;
+    max-height: 100%;
   }
   
   .hero-left-items {
@@ -296,7 +307,6 @@
     justify-content: center;
     padding: 30px 0;
     margin: 0;
-    gap: 30px;
     overflow: hidden;
   }
   
@@ -1079,6 +1089,7 @@
     justify-content: space-between;
     /* gap: 5rem; */
     list-style: none; /* Remove list bullets */
+    /* color: var(--secondary-04);  */
   }
 
   /* .ul-list-style-none li {
@@ -1724,6 +1735,10 @@
   .gap-0 {
     gap: 0;
   }
+
+  .gap-10 {
+    gap: 10px;
+  }
   
   .gap-30 {
     gap: 30px;
@@ -1901,12 +1916,13 @@
 
     .hero-desktop {
         /* display: block; */
-        background-image: url("./src/hero-background-1.jpeg");
+        background-image: url("./src/hero-background-v2.jpeg");
         height: 100vh;
         width: 100vw;
         background-repeat: no-repeat;
-        background-size: 100vw 100vh;
-        padding: 3rem 5rem;
+        background-size: cover;
+        /* background-size: 100vw 100vh; */
+        padding: 2rem 5rem;
       }
   
     /************************************************************************************/
@@ -1990,19 +2006,24 @@
       font-weight: 700;
     }
 
+    .aktiviti-image img {
+      width: 320px;
+      height: 320px;
+    }
+
     /*****************************************************************/
     /* BUTTON */
     /*****************************************************************/    
 
     .btn-primary {
-        padding: 10px 25px;
-        border-radius: 10px;
-        border: none;
-        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        /* font-weight: 700; */
-        font-size: 26px;
-        color: var(--white);
-      }
+      padding: 10px 25px;
+      border-radius: 10px;
+      border: none;
+      box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      /* font-weight: 700; */
+      font-size: 26px;
+      color: var(--white);
+    }
 
   }
   
@@ -2055,6 +2076,31 @@
   
     .card-row .container-content {
       padding: 30px 100px;
+    }
+
+    #kenali-anms {
+      height: 100%;
+    }
+  
+    #aktiviti {
+      background-color: var(--dark-primary-01);
+      height: 100%;
+      z-index: 2;
+    }
+  
+    #pempengaruh {
+      background-color: var(--light-primary-01);
+      height: 100%;
+      z-index: 2;
+    }
+  
+    #hadiah {
+      background-image: url("./src/hadiah-background.jpeg");
+      height: 100vh;
+      width: 100vw;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 3rem 5rem;
     }
   
     /*****************************************************************/
@@ -2231,6 +2277,31 @@
       position: absolute;
       top: 0;
       left: 0;
+    }
+
+    #kenali-anms {
+      height: 100%;
+    }
+  
+    #aktiviti {
+      background-color: var(--dark-primary-01);
+      height: 100%;
+      z-index: 2;
+    }
+  
+    #pempengaruh {
+      background-color: var(--light-primary-01);
+      height: 100%;
+      z-index: 2;
+    }
+  
+    #hadiah {
+      background-image: url("./src/hadiah-background.jpeg");
+      height: 100vh;
+      width: 100vw;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 3rem 5rem;
     }
   
     main {
@@ -2710,6 +2781,31 @@
       top: 0;
       left: 0;
     }
+
+    #kenali-anms {
+      height: 100%;
+    }
+  
+    #aktiviti {
+      background-color: var(--dark-primary-01);
+      height: 100%;
+      z-index: 2;
+    }
+  
+    #pempengaruh {
+      background-color: var(--light-primary-01);
+      height: 100%;
+      z-index: 2;
+    }
+  
+    #hadiah {
+      background-image: url("./src/hadiah-background.jpeg");
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 3rem 5rem;
+    }
   
     main {
       padding: 30px 20px;
@@ -2790,7 +2886,21 @@
     /*****************************************************************/
     /* TYPOGRAPHY */
     /*****************************************************************/
+
+    .display-1 {
+      font-size: 36px;
+    }
     
+    .display-2 {
+      font-size: 40px;
+      font-family: Matter-Heavy; 
+      font-weight: 800;
+    }
+
+    .display-3 {
+      font-size: 80px;
+    }
+
     h1 {
       font-size: 28px;
       font-weight: 700;
@@ -2847,6 +2957,16 @@
   
     footer p {
       text-align: center;
+    }
+
+    .btn-primary {
+      padding: 10px 25px;
+      border-radius: 10px;
+      border: none;
+      box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      /* font-weight: 700; */
+      font-size: 16px;
+      color: var(--white);
     }
   
     /*****************************************************************/
